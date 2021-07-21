@@ -1,6 +1,7 @@
 const projects = [
   { name: "custom-progress-bar" },
   { name: "dad-jokes-generator" },
+  { name: "pwd-strength-effect" },
 ];
 
 const list = document.getElementById("list");
