@@ -1,11 +1,18 @@
 const joke = document.getElementById("joke");
 const generate = document.getElementById("generate");
 
-generate.addEventListener("click", () => {
-  fetch("https://icanhazdadjoke.com/slack")
+generateJoke = async () => {
+  const result = await fetch("https://icanhazdadjoke.com/", {
+    headers: { Accept: "application/json" },
+  })
     .then((res) => res.json())
     .then((res) => {
-      console.log(res.attachments[0].text);
-      joke.innerText = res.attachments[0].text;
+      return res.joke;
+    })
+    .catch((err) => {
+      console.log(err);
     });
-});
+  joke.innerText = result;
+};
+
+generate.addEventListener("click", generateJoke);
