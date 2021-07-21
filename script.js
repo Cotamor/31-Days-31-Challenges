@@ -1,4 +1,7 @@
-const projects = [{ name: "Custom-Progress-Bar" }];
+const projects = [
+  { name: "custom-progress-bar" },
+  { name: "dad-jokes-generator" },
+];
 
 const list = document.getElementById("list");
 
