@@ -8,6 +8,8 @@ const projects = [
   { name: "traffic-lights" },
   { name: "image-reflection" },
   { name: "hover-board" },
+  { name: "mix-blend-loader" },
+  { name: "auto-text-effect" },
 ];
 
 const list = document.getElementById("list");
