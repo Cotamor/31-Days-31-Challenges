@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.bg {
+  position: relative;
+  box-shadow: 0 5px 20px 3px rgba(68, 14, 14, 0.3);
+  background-image: url("https://images.unsplash.com/photo-1436397543931-01c4a5162bdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1578402382615-8c856f41452e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80"); */
+  background-position: bottom right;
+  background-size: cover;
+  width: 80vw;
+  height: 60vh;
+  margin: 50px auto;
+}
+.bg::after {
+  position: absolute;
+  content: "";
+  background-image: inherit;
+  background-position: bottom right;
+  background-size: cover;
+  /* transform-origin: bottom; */
+  transform: rotateX(180deg);
+  bottom: -101%;
+  width: inherit;
+  height: inherit;
+}
+.bg::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    #ffffff 60%,
+    #ffffff
+  );
+  bottom: -101%;
+  width: inherit;
+  height: inherit;
+  z-index: 10;
+}

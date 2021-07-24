@@ -3,6 +3,10 @@ const projects = [
   { name: "dad-jokes-generator" },
   { name: "pwd-strength-effect" },
   { name: "line-through-effect" },
+  { name: "visual-counter" },
+  { name: "css-custom-checkbox" },
+  { name: "traffic-lights" },
+  { name: "image-reflection" },
 ];
 
 const list = document.getElementById("list");

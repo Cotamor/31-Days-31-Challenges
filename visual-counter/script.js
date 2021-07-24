@@ -1,0 +1,22 @@
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = 0;
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const c = +counter.innerText;
+    //End at the same time
+    const increment = target / 500;
+    //Smaller number end early
+    // const increment = Math.random() * 100;
+
+    if (c < target) {
+      counter.innerText = Math.ceil(c + increment);
+      setTimeout(updateCounter, 1);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCounter();
+});
