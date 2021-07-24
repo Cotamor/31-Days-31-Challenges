@@ -7,6 +7,7 @@ const projects = [
   { name: "css-custom-checkbox" },
   { name: "traffic-lights" },
   { name: "image-reflection" },
+  { name: "hover-board" },
 ];
 
 const list = document.getElementById("list");
