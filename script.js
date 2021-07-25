@@ -10,6 +10,8 @@ const projects = [
   { name: "hover-board" },
   { name: "mix-blend-loader" },
   { name: "auto-text-effect" },
+  { name: "css-smooth-scroll" },
+  { name: "random-meal-generator" },
 ];
 
 const list = document.getElementById("list");
