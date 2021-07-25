@@ -37,6 +37,9 @@ li {
 .meal {
   margin: 20px 0;
 }
+.instructions {
+  margin-bottom: 20px;
+}
 
 .videoWrapper {
   position: relative;

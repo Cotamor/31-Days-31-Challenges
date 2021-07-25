@@ -31,20 +31,20 @@ function createMeal(data) {
       <img src="${data.strMealThumb}" alt="meal-image" />
     </div>
     <div class="row">
-      <div class="three columns">
+      <div class="nine columns">
+        <h4>${data.strMeal}</h4>
+        <p class='instructions'>${data.strInstructions}</p>
         <p><strong>Category:</strong> ${data.strCategory}</p>
         <p><strong>Area:</strong> ${data.strArea}</p>
         <p><strong>Tags:</strong> ${
           data.strTags ? data.strTags.split(",").join(", ") : "No tags"
         }</p>
+      </div>
+      <div class="three columns">
         <h5>Ingredients:</h5>
         <ul>
           ${ingredients.map((item) => `<li>${item}</li>`).join("")}
         </ul>
-      </div>
-      <div class="nine columns">
-        <h4>${data.strMeal}</h4>
-        <p>${data.strInstructions}</p>
       </div>
     </div>
     <div class="row">
