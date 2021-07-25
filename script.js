@@ -14,6 +14,7 @@ const projects = [
   { name: "random-meal-generator" },
   { name: "live-visits-counter" },
   { name: "wave-animation" },
+  { name: "poke-dex" },
 ];
 
 const list = document.getElementById("list");
