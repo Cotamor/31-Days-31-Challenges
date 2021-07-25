@@ -12,6 +12,8 @@ const projects = [
   { name: "auto-text-effect" },
   { name: "css-smooth-scroll" },
   { name: "random-meal-generator" },
+  { name: "live-visits-counter" },
+  { name: "wave-animation" },
 ];
 
 const list = document.getElementById("list");
