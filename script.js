@@ -15,6 +15,7 @@ const projects = [
   { name: "live-visits-counter" },
   { name: "wave-animation" },
   { name: "poke-dex" },
+  { name: "countdown-timer" },
 ];
 
 const list = document.getElementById("list");
