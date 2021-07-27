@@ -16,6 +16,7 @@ const projects = [
   { name: "wave-animation" },
   { name: "poke-dex" },
   { name: "countdown-timer" },
+  { name: "rest-countries-api" },
 ];
 
 const list = document.getElementById("list");

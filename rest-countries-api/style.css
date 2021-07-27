@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+:root {
+  --text: hsl(200, 15%, 8%);
+  --input: hsl(0, 0%, 52%);
+  --body: hsl(0, 0%, 98%);
+  --background-el: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body);
+  color: var(--text);
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+}
+body.dark {
+  --text: hsl(0, 0%, 100%);
+  --body: hsl(207, 26%, 17%);
+  --background-el: hsl(209, 23%, 22%);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+img {
+  /* height: 160px;
+  width: 265px; */
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+header {
+  background-color: var(--background-el);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+header i {
+  margin-right: 5px;
+}
+.btn {
+  cursor: pointer;
+}
+.btn .far {
+  display: none;
+}
+body.dark .far {
+  display: inline-block;
+}
+body.dark .fas {
+  display: none;
+}
+.container {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 70px;
+}
+
+input {
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  width: 350px;
+  color: var(--input);
+  font-family: inherit;
+  background-color: var(--background-el);
+  background-image: url(./images/magnifierGrey.svg);
+  background-position-x: 15px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  padding: 20px 60px;
+}
+input::placeholder {
+  color: inherit;
+}
+body.dark input {
+  color: var(--text);
+}
+input:focus {
+  outline: none;
+}
+
+.dropdown {
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  background-color: var(--background-el);
+  background-image: url(./images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 90%;
+  font-size: 14px;
+
+  width: 200px;
+  padding: 20px 20px;
+}
+
+.dropdown ul {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  position: absolute;
+  background-color: var(--background-el);
+  top: 55px;
+  left: 0;
+  width: 200px;
+  padding: 10px 20px;
+}
+.dropdown.hide ul {
+  display: none;
+}
+.dropdown li {
+  margin-bottom: 3px;
+}
+
+/* Modal */
+.modal {
+  background-color: var(--background-el);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.modal img {
+  max-width: 300px;
+}
+.modal-body {
+  padding: 30px;
+}
+.close-btn {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  top: 20%;
+  right: 20%;
+}
+
+.countries {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.country {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  margin: 20px;
+  background-color: var(--background-el);
+  overflow: hidden;
+  max-width: 265px;
+}
+
+.country img {
+  object-fit: cover;
+  height: 160px;
+  width: 265px;
+}
+strong {
+  font-weight: 600;
+}
+.img-container {
+  /* background-color: grey; */
+}
+.country p {
+  margin: 0;
+  padding: 0;
+}
+.info {
+  /* border-top: 1px solid rgba(0, 0, 0, 0.4); */
+  padding: 10px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .close-btn {
+    top: 70px;
+  }
+  .mode {
+    font-size: 16px;
+  }
+  .search-bar {
+    flex-direction: column;
+    padding: 40px 10px 20px;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+  input,
+  .dropdown {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .modal {
+    text-align: left;
+    flex-direction: column;
+  }
+  .close-btn {
+    top: 5%;
+    right: 5%;
+  }
+
+  .modal-body {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+  .mode {
+    font-size: 14px;
+  }
+  .search-bar {
+    padding: 20px 10px 10px;
+  }
+  input,
+  .dropdown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REST Countries API</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Where in the world?</h1>
+    <div id='mode' class="btn"><i class="fas fa-moon"></i><i class="far fa-moon"></i>Dark Mode</div>
+  </header>
+  <main class="container">
+
+    <div class="search-bar">
+
+      <input type="text" id="search" name='search' placeholder="Seach for a country...">
+
+      <div id='dropdown' class="btn dropdown hide">
+        Filter by Region
+        <ul>
+          <li>All</li>
+          <li>Africa</li>
+          <li>Americas</li>
+          <li>Asia</li>
+          <li>Europe</li>
+          <li>Oceania</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="modal">
+
+      <button id="closeModal" class="close-btn"><i class="fas fa-times"></i></button>
+      <img src="" alt="">
+      <div class="modal-body"></div>
+
+    </div>
+
+    <div id='countries_container' class="countries"></div>
+  </main>
+</body>
+
+</html>
