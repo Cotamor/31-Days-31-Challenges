@@ -20,7 +20,6 @@ const projects = [
   { name: "kinetic-loader" },
   { name: "newsletter-design" },
   { name: "rotating-circles" },
-  { name: "rotating-circles" },
   { name: "animation-on-input" },
 ];
 
