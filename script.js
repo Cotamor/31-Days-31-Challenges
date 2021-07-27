@@ -19,6 +19,7 @@ const projects = [
   { name: "rest-countries-api" },
   { name: "kinetic-loader" },
   { name: "newsletter-design" },
+  { name: "rotating-circles" },
 ];
 
 const list = document.getElementById("list");
