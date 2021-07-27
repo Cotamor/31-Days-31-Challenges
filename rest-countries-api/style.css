@@ -64,15 +64,7 @@ header i {
 .btn {
   cursor: pointer;
 }
-.btn .far {
-  display: none;
-}
-body.dark .far {
-  display: inline-block;
-}
-body.dark .fas {
-  display: none;
-}
+
 .container {
   width: 1300px;
   max-width: 100%;
@@ -163,7 +155,8 @@ input:focus {
 }
 .close-btn {
   position: absolute;
-  background: transparent;
+  background: var(--background-el);
+  color: var(--text);
   cursor: pointer;
   font-size: 30px;
   border: none;
