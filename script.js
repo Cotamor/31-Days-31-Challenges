@@ -17,6 +17,7 @@ const projects = [
   { name: "poke-dex" },
   { name: "countdown-timer" },
   { name: "rest-countries-api" },
+  { name: "kinetic-loader" },
 ];
 
 const list = document.getElementById("list");
