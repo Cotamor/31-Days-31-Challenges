@@ -22,6 +22,7 @@ const projects = [
   { name: "rotating-circles" },
   { name: "animation-on-input" },
   { name: "decode-binary-msg" },
+  { name: "zoom-effect" },
 ];
 
 const list = document.getElementById("list");
