@@ -21,6 +21,7 @@ const projects = [
   { name: "newsletter-design" },
   { name: "rotating-circles" },
   { name: "animation-on-input" },
+  { name: "decode-binary-msg" },
 ];
 
 const list = document.getElementById("list");

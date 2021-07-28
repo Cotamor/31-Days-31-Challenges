@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+:root {
+  --text: hsl(202, 15%, 15%);
+  --input: hsl(0, 0%, 34%);
+  --body: hsl(0, 50%, 71%);
+  --background-el: hsl(0, 100%, 97%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body);
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: 0.3s ease;
+}
+body.dark {
+  --text: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 100%);
+  --body: hsl(207, 26%, 17%);
+  --background-el: hsl(209, 23%, 22%);
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: 60px;
+}
+textarea {
+  font-family: inherit;
+  background-color: var(--background-el);
+  color: var(--input);
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  resize: none;
+  transition: 0.3s ease;
+}
+textarea:focus {
+  outline: none;
+}
+.container {
+  display: flex;
+}
+.form-control {
+  position: relative;
+  display: flex;
+}
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 30px;
+}
+.btn {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--background-el);
+  color: var(--text);
+  border-radius: 5px;
+  cursor: pointer;
+
+  border: none;
+  font-size: 20px;
+  padding: 8px 20px;
+  transition: 0.3s ease;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.dark-mode {
+  position: absolute;
+  cursor: pointer;
+  top: 2%;
+  right: 2%;
+  font-size: 14px;
+}
+.dark-mode:active {
+  transform: scale(0.9);
+}
+.clear {
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 0;
+    font-size: 25px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .btn-box {
+    flex-direction: row;
+    margin: 40px auto 50px;
+  }
+  .btn {
+    margin: 0 20px;
+  }
+  .btn-right i {
+    transform: rotate(90deg);
+  }
+  .btn-left i {
+    transform: rotate(90deg);
+  }
+}
