@@ -23,6 +23,7 @@ const projects = [
   { name: "animation-on-input" },
   { name: "decode-binary-msg" },
   { name: "zoom-effect" },
+  { name: "sidebar-menu" },
 ];
 
 const list = document.getElementById("list");
