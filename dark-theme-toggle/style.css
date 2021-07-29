@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --text: rgb(19, 25, 58);
+  --bg: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: 0.4s ease;
+}
+h1 {
+  margin-bottom: 40px;
+}
+body.dark {
+  --text: #eee;
+  --bg: rgb(17, 23, 56);
+}
+.toggle-container {
+  /* background-color: grey; */
+  position: relative;
+  width: 60px;
+  height: 31px;
+}
+.toggle-container input {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(180, 180, 180);
+  border-radius: 50px;
+}
+.slider::before {
+  background-color: #eee;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  bottom: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.4s ease;
+  z-index: 10;
+}
+label {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5);
+}
+.fa-moon {
+  text-align: center;
+  font-size: 20px;
+  width: 28px;
+  z-index: 5;
+  color: rgb(255, 222, 32);
+}
+.fa-sun {
+  text-align: center;
+  font-size: 20px;
+  width: 28px;
+  z-index: 5;
+  color: rgb(255, 222, 32);
+}
+input:checked + .slider::before {
+  transform: translateX(28px);
+}

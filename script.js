@@ -24,6 +24,7 @@ const projects = [
   { name: "decode-binary-msg" },
   { name: "zoom-effect" },
   { name: "sidebar-menu" },
+  { name: "dark-theme-toggle" },
 ];
 
 const list = document.getElementById("list");
