@@ -25,6 +25,8 @@ const projects = [
   { name: "zoom-effect" },
   { name: "sidebar-menu" },
   { name: "dark-theme-toggle" },
+  { name: "loading-animation" },
+  { name: "pulse-effect" },
 ];
 
 const list = document.getElementById("list");
