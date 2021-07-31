@@ -27,6 +27,7 @@ const projects = [
   { name: "dark-theme-toggle" },
   { name: "loading-animation" },
   { name: "pulse-effect" },
+  { name: "netflix-nav-animation" },
 ];
 
 const list = document.getElementById("list");
