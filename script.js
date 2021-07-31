@@ -28,6 +28,7 @@ const projects = [
   { name: "loading-animation" },
   { name: "pulse-effect" },
   { name: "netflix-nav-animation" },
+  { name: "random-picker" },
 ];
 
 const list = document.getElementById("list");
