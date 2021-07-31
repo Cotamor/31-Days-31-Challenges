@@ -16,7 +16,7 @@ body {
 ul {
   list-style: none;
   margin-bottom: 30px;
-  padding-left: 25px;
+  padding-left: 0px;
 }
 a {
   color: #222;
@@ -53,7 +53,7 @@ img {
 }
 .mobile-nav.black {
   background-color: black;
-  width: 65%;
+  width: 75%;
   transition-delay: 0.4s;
 }
 .mobile-nav.black.visible {
@@ -66,7 +66,7 @@ img {
 }
 .mobile-nav.white {
   background-color: white;
-  padding: 40px;
+  padding: 50px 20px;
   width: 95%;
 }
 .mobile-nav.white.visible {
@@ -79,17 +79,24 @@ img {
   right: 30px;
 }
 .logo img {
-  max-width: 150px;
-  margin-bottom: 30px;
+  max-width: 130px;
+  margin-bottom: 10px;
 }
 .mobile-nav .logo {
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .title {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 25px;
 }
 .sub-title {
-  font-size: 16px;
+  font-size: 14px;
+  padding-left: 15px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  .mobile-nav {
+    max-width: 400px;
+  }
 }
