@@ -30,6 +30,8 @@ const projects = [
   { name: "netflix-nav-animation" },
   { name: "random-picker" },
   { name: "cool-responsive-nav" },
+  { name: "heart-shape-css" },
+  { name: "donate-card" },
 ];
 
 const list = document.getElementById("list");
