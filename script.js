@@ -29,6 +29,7 @@ const projects = [
   { name: "pulse-effect" },
   { name: "netflix-nav-animation" },
   { name: "random-picker" },
+  { name: "cool-responsive-nav" },
 ];
 
 const list = document.getElementById("list");
