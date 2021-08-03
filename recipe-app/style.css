@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+}
+.mobile-container {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  margin: 0 auto;
+  width: 400px;
+  max-width: 100%;
+}
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border: none;
+  background-color: #eee;
+  font-family: inherit;
+  margin: 20px 0;
+  padding: 8px 16px;
+}
+input:focus {
+  outline: none;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  font-size: 20px;
+}
+
+/* Favorite Meal container */
+h2 {
+  background-color: bisque;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px;
+  margin: 0;
+}
+.fav-container {
+  position: relative;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* padding: 0 20px; */
+}
+
+.fav-container ul {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+  height: 100%;
+}
+
+.fav {
+  position: relative;
+  /* background-color: salmon; */
+  margin: 8px;
+}
+
+.fav .clear {
+  display: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: -5px;
+  right: -10px;
+  padding: 1px 3px;
+  margin: 0;
+}
+
+.fav:hover .clear {
+  display: block;
+}
+.fav img {
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+  border-radius: 50%;
+  width: 50px;
+}
+.fav p {
+  font-size: 0.75rem;
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Meal Container */
+.meal-container {
+  margin: 10px;
+}
+.meal {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 10px;
+  background-color: salmon;
+  margin: 20px 10px;
+}
+.random {
+  background-color: #fff;
+  position: absolute;
+  top: 1rem;
+  font-size: 14px;
+  padding: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal img {
+  cursor: pointer;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.meal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+.meal-body h4 {
+  font-weight: bold;
+}
+
+.fav-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba(100, 100, 100, 0.418);
+}
+.fav-btn.liked {
+  font-size: 20px;
+  color: rgb(223, 17, 45);
+}
+.meal-info-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meal-info-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.meal-info {
+  position: relative;
+  background-color: #fff;
+  width: 500px;
+  max-width: 100%;
+  padding: 20px;
+  overflow: auto;
+  max-height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+.info-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.meal-info p {
+  padding: 20px 0;
+}
