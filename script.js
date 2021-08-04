@@ -33,6 +33,7 @@ const projects = [
   { name: "heart-shape-css" },
   { name: "donate-card" },
   { name: "recipe-app" },
+  { name: "notes-app" },
 ];
 
 const list = document.getElementById("list");
