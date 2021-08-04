@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #eee;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: rgba(255, 60, 102, 0.705);
+}
+input {
+  border: none;
+  color: #333;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-family: inherit;
+  font-size: 1.75rem;
+  padding: 10px 20px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgba(185, 185, 185, 0.801);
+}
+.todo {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-size: 1.65rem;
+  margin-top: 5px;
+  padding: 13px 20px;
+}
+.todo.complete {
+  color: rgb(145, 145, 145);
+  text-decoration: line-through;
+}
+footer {
+  padding: 20px;
+  width: 100%;
+}
+footer p {
+  color: rgb(145, 145, 145);
+  text-align: center;
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+  input {
+    font-size: 1.25rem;
+    padding: 8px 20px;
+  }
+  .todo {
+    font-size: 1.25rem;
+    padding: 8px 20px;
+  }
+}

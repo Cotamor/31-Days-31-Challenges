@@ -34,6 +34,7 @@ const projects = [
   { name: "donate-card" },
   { name: "recipe-app" },
   { name: "notes-app" },
+  { name: "todo-app" },
 ];
 
 const list = document.getElementById("list");
