@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgba(22, 9, 82, 0.822);
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1220px;
+  max-width: 100%;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+input {
+  background-color: #eee;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+input:focus {
+  outline: none;
+}
+.search {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #eee;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+.search:active {
+  transform: scale(0.9);
+}
+/* Main */
+main {
+  padding: 10px;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie {
+  position: relative;
+  background-color: rgba(120, 106, 184, 0.822);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  height: 500px;
+  width: 280px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+}
+.movie-info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+.title {
+  font-size: 18px;
+}
+.rating {
+  border-radius: 30px;
+  padding: 5px 10px;
+  background-color: rebeccapurple;
+  color: orange;
+}
+.overview {
+  position: relative;
+  color: #333;
+  background-color: orange;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease;
+  overflow: auto;
+}
+.overview i {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.overview.show {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 624px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  input {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .search {
+    font-size: 25px;
+  }
+  .movie {
+    position: relative;
+    background-color: rgba(120, 106, 184, 0.822);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    height: 600px;
+    width: 320px;
+    margin: 10px;
+    overflow: hidden;
+  }
+}

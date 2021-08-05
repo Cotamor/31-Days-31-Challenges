@@ -31,7 +31,7 @@ function updateTimer() {
   let minutes = Math.floor(time / 60)
     .toString()
     .padStart(2, 0);
-  let seconds = (time % 60).toString().padStart(2, 0);
+  let seconds = (time % 60).toString().padStart(3, 0);
   countdownElm.innerHTML = `${minutes}:${seconds}`;
 }
 
