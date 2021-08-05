@@ -36,6 +36,7 @@ const projects = [
   { name: "notes-app" },
   { name: "todo-app" },
   { name: "movie-app" },
+  { name: "github-profile" },
 ];
 
 const list = document.getElementById("list");
