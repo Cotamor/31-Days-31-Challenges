@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>Drawing App</h1>
+  <canvas id="canvas" class="canvas" width="350px" height="500px"></canvas>
+  <div class="tool-box">
+    <button id="decrease"><i class="fas fa-minus"></i></button>
+    <span id='size'></span>
+    <button id="increase"><i class="fas fa-plus"></i></button>
+    <button id="erase"><i class="fas fa-eraser"></i></button>
+    <input type="color" id="color" class="color">
+    <div class="color-value" id='color-value'>#000000</div>
+  </div>
+</body>
+
+</html>
