@@ -15,11 +15,19 @@ body {
 }
 h1,
 h2 {
+  /* text-align: center; */
   margin: 15px 0;
+}
+h1 {
+  font-size: 23px;
+}
+h2 {
+  font-size: 20px;
 }
 img {
   max-width: 100%;
 }
+
 .search {
   font-family: inherit;
   border: none;
@@ -37,16 +45,21 @@ img {
 .search:focus {
   outline: none;
 }
+
+.container {
+  display: flex;
+}
 .weather-container {
   border-radius: 10px;
   background-color: gray;
-  font-size: 35px;
+  font-size: 30px;
   display: flex;
   color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 .location {
@@ -65,7 +78,7 @@ img {
   width: 100%;
 }
 .sky {
-  font-size: 30px;
+  font-size: 16px;
 }
 .sevenDays {
   background-color: gray;
@@ -76,6 +89,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 30px;
 }
 .forcast {
   border-radius: 10px;
@@ -102,7 +116,15 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
   .weather-container {
+    margin-right: 0;
     font-size: 25px;
   }
   .sky {

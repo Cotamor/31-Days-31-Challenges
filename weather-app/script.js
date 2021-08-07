@@ -38,9 +38,7 @@ async function getCurrentWeather(city) {
   <img src="${icon_url(icon)}" alt="icon of ${description}">
   </span>
   ${temp.toFixed(1)}℃
-  <span class="icon">
-  <img src="${icon_url(icon)}" alt="icon of ${description}">
-  </span>
+  
   </div>
   <div class="sky">${description}</div>
   `;
