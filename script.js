@@ -39,6 +39,7 @@ const projects = [
   { name: "github-profile" },
   { name: "drawing-app" },
   { name: "password-generator" },
+  { name: "weather-app" },
 ];
 
 const list = document.getElementById("list");
