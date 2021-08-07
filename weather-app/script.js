@@ -63,7 +63,7 @@ async function getForcast(city) {
     const forcast = document.createElement("div");
     forcast.classList.add("forcast");
     forcast.innerHTML = `
-    <div class="date">${d.getMonth() + 1} / ${d.getDate() + index + index} (${
+    <div class="date">${d.getMonth() + 1} / ${d.getDate() + index} (${
       day[d.getDay() + index]
     })</div>
     <div class="temp">
