@@ -40,6 +40,7 @@ const projects = [
   { name: "drawing-app" },
   { name: "password-generator" },
   { name: "weather-app" },
+  { name: "snake-game" },
 ];
 
 const list = document.getElementById("list");
