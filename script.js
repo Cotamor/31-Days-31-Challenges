@@ -41,6 +41,7 @@ const projects = [
   { name: "password-generator" },
   { name: "weather-app" },
   { name: "snake-game" },
+  { name: "blurry-loading" },
 ];
 
 const list = document.getElementById("list");
